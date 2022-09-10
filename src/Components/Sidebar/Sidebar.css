@@ -1,0 +1,32 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar .bxs-plus-circle {
+    font-size: 50px;
+    color: #00001d;
+    cursor: pointer;
+}
+
+.sidebar-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    height: 0;
+    transition: 300ms;
+    cursor: pointer;
+}
+
+.sidebar-list-active {
+    height: 300px;
+}
+
+.sidebar-list-item {
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    list-style: none;
+}
