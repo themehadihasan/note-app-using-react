@@ -13,8 +13,6 @@ export default function Note(props) {
 
         let hrs = date.getHours();
         let amPm = hrs > 12 ? "PM" : "AM";
-        hrs = hrs ? hrs : "12";
-        hrs = hrs > 12 ? hrs = 24 - hrs : hrs;
 
         let minute = date.getMinutes();
         minute = minute < 10 ? "0" + minute : minute;
@@ -23,7 +21,6 @@ export default function Note(props) {
         const month = monthNames[date.getMonth()];
 
         return `${hrs}:${minute} ${amPm}, ${day} ${month}`;
-
     }
 
     const debounce = (func) => {
@@ -37,7 +34,7 @@ export default function Note(props) {
     
   return (
     <div className='note' style={{backgroundColor:props.note.color}}>
-        <textarea className='note-text' defaultValue={props.note.text} onChange={(e) => updateText(e.target.value, props.note.id)}/>
+        <textarea className='note-text' maxlength="150" defaultValue={props.note.text} onChange={(e) => updateText(e.target.value, props.note.id)}/>
         <div className='note-bottom'>
         <p>{formateDate(props.note.time)}</p>
         <i class='bx bx-trash' onClick={() => props.deleteNote(props.note.id)}></i>

@@ -4,10 +4,13 @@
     gap: 20px;
 }
 
-.sidebar .bxs-plus-circle {
-    font-size: 50px;
-    color: #00001d;
+.sidebar .bx-plus {
+    font-size: 25px;
+    color: white;
     cursor: pointer;
+    background-color: #00001d;
+    padding: 10px;
+    border-radius: 25px;
 }
 
 .sidebar-list {

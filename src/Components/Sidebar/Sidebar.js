@@ -7,7 +7,7 @@ export default function Sidebar(props) {
 
   return (
     <div className='sidebar'>
-      <i class='bx bxs-plus-circle' onClick={() => setListOpen(!listOpen)}></i>
+      <i class='bx bx-plus' onClick={() => setListOpen(!listOpen)}></i>
       <ul className={`sidebar-list ${listOpen?"sidebar-list-active":""}`}>
       {
         colors.map((item, index) => (

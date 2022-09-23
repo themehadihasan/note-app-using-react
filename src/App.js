@@ -15,7 +15,7 @@ function App() {
       text: "",
       time: Date.now(),
       color,
-    })
+    });
 
     setNotes(tempNotes);
   }

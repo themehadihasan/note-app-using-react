@@ -16,7 +16,7 @@ export default function NoteContainer(props) {
 
   return (
     <div className='note-container'>
-    <h2>Notes...</h2>
+    <h2>Your notes...</h2>
     <div className='note-container-notes custom-scroll'>
 
     {
