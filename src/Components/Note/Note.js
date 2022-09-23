@@ -14,7 +14,7 @@ export default function Note(props) {
         let hrs = date.getHours();
         let amPm = hrs < 12 ? "AM" : "PM";
         // hrs = hrs ? hrs : "12";
-        // hrs = hrs > 12 ? (hrs = (-12) - hrs) : hrs;
+        // hrs = hrs > 12 ? (hrs = 24 - hrs) : hrs;
 
         let minute = date.getMinutes();
         minute = minute < 10 ? "0" + minute : minute;
